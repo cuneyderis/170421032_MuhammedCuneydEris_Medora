@@ -1,0 +1,64 @@
+{
+  "cardiovascular": {
+    "name": "Kardiyovasküler Hastalık Risk Tahmini",
+    "description": "Neural Network tabanlı kardiyovasküler hastalık risk değerlendirmesi",
+    "version": "1.0.0",
+    "accuracy": 0.72,
+    "features": [
+      "age",
+      "gender", 
+      "height",
+      "weight",
+      "ap_hi",
+      "ap_lo",
+      "cholesterol",
+      "gluc",
+      "smoke",
+      "alco",
+      "active",
+      "bmi",
+      "age_years",
+      "pressure_risk",
+      "lifestyle_risk",
+      "metabolic_risk"
+    ],
+    "feature_descriptions": {
+      "age": "Yaş (gün cinsinden)",
+      "gender": "Cinsiyet (1: Kadın, 2: Erkek)",
+      "height": "Boy (cm)",
+      "weight": "Kilo (kg)",
+      "ap_hi": "Sistolik kan basıncı",
+      "ap_lo": "Diyastolik kan basıncı",
+      "cholesterol": "Kolesterol seviyesi (1: Normal, 2: Yüksek, 3: Çok yüksek)",
+      "gluc": "Glukoz seviyesi (1: Normal, 2: Yüksek, 3: Çok yüksek)",
+      "smoke": "Sigara kullanımı (0: Hayır, 1: Evet)",
+      "alco": "Alkol kullanımı (0: Hayır, 1: Evet)",
+      "active": "Fiziksel aktivite (0: Hayır, 1: Evet)",
+      "bmi": "Vücut kitle indeksi",
+      "age_years": "Yaş (yıl cinsinden)",
+      "pressure_risk": "Tansiyon risk faktörü",
+      "lifestyle_risk": "Yaşam tarzı risk faktörü",
+      "metabolic_risk": "Metabolik risk faktörü"
+    },
+    "risk_levels": {
+      "low": {
+        "threshold": 0.3,
+        "label": "Düşük Risk",
+        "color": "#16a34a",
+        "description": "Kardiyovasküler hastalık riski düşük"
+      },
+      "medium": {
+        "threshold": 0.6,
+        "label": "Orta Risk", 
+        "color": "#eab308",
+        "description": "Kardiyovasküler hastalık riski orta seviyede"
+      },
+      "high": {
+        "threshold": 1.0,
+        "label": "Yüksek Risk",
+        "color": "#ef4444", 
+        "description": "Kardiyovasküler hastalık riski yüksek"
+      }
+    }
+  }
+} 

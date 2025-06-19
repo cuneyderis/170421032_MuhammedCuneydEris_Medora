@@ -1,0 +1,19 @@
+{
+  "name": "react-native-samsung-health",
+  "version": "1.0.0",
+  "description": "Samsung Health SDK bridge for React Native",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-native": "^0.76.9"
+  },
+  "author": "Medora Health Team",
+  "license": "MIT"
+} 

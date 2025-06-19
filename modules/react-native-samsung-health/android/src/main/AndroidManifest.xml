@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Samsung Health SDK permissions -->
+    <uses-permission android:name="com.samsung.android.providers.health.permission.READ" />
+    <uses-permission android:name="com.samsung.android.providers.health.permission.WRITE" />
+    <uses-permission android:name="android.permission.BODY_SENSORS" />
+    <uses-permission android:name="android.permission.BODY_SENSORS_BACKGROUND" />
+    
+    <!-- Samsung Health service queries -->
+    <queries>
+        <package android:name="com.sec.android.app.shealth" />
+        <intent>
+            <action android:name="com.samsung.android.service.health.tracking.action.TRACKING_SERVICE" />
+        </intent>
+    </queries>
+</manifest> 
